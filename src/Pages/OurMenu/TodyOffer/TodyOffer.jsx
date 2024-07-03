@@ -1,17 +1,21 @@
 import React, { useEffect, useState } from "react";
 import MenuItem from "../../../Shared/MenuItem/MenuItem";
 import SectionTitle from "../../../components/SectionTitle/SectionTitle";
+import useMenu from "../../../components/Hooks/useMenu";
 
 const TodyOffer = () => {
-  const [menu, setMenu] = useState([]);
-  useEffect(() => {
-    fetch("menu.json")
-      .then((res) => res.json())
-      .then((data) => {
-        const TodyOffer = data.filter((item) => item.category === "popular");
-        setMenu(TodyOffer);
-      });
-  }, []);
+  // const [menu, setMenu] = useState([]);
+  // useEffect(() => {
+  //   fetch("menu.json")
+  //     .then((res) => res.json())
+  //     .then((data) => {
+  //       const TodyOffer = data.filter((item) => item.category === "popular");
+  //       setMenu(TodyOffer);
+  //     });
+  // }, []);
+
+  const [menu] = useMenu();
+  const popular = menu.filter((item) => item.category === "popular");
 
   return (
     <section className="w-full min-h-screen flex items-center justify-center">
@@ -21,7 +25,7 @@ const TodyOffer = () => {
           headign={"TODAY'S OFFER"}
         ></SectionTitle>
         <div className="flex items-center flex-wrap gap-6 mx-auto">
-          {menu.map((item) => (
+          {popular.map((item) => (
             <MenuItem key={item._id} item={item}></MenuItem>
           ))}
         </div>
