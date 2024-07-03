@@ -12,28 +12,30 @@ import {
 
 const Hero = () => {
   return (
-    <div>
-      <Carousel className="text-center ">
-        <div>
-          <img src={Banner1} />
-        </div>
-        <div>
-          <img src={Banner2} />
-        </div>
-        <div>
-          <img src={Banner3} />
-        </div>
-        <div>
-          <img src={Banner4} />
-        </div>
-        <div>
-          <img src={Banner5} />
-        </div>
-        <div>
-          <img src={Banner6} />
-        </div>
-      </Carousel>
-    </div>
+    <section className="w-full">
+      <div className="w-full min-h-[804px]">
+        <Carousel className="text-center ">
+          <div>
+            <img src={Banner1} />
+          </div>
+          <div>
+            <img src={Banner2} />
+          </div>
+          <div>
+            <img src={Banner3} />
+          </div>
+          <div>
+            <img src={Banner4} />
+          </div>
+          <div>
+            <img src={Banner5} />
+          </div>
+          <div>
+            <img src={Banner6} />
+          </div>
+        </Carousel>
+      </div>
+    </section>
   );
 };
 
