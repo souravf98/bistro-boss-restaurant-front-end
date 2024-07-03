@@ -1,5 +1,6 @@
 import React from "react";
 import { FaUser, FaCartArrowDown } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -28,7 +29,7 @@ const Navbar = () => {
               className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
             >
               <li>
-                <a>Home</a>
+                <Link to="/">Home</Link>
               </li>
               <li>
                 <a> Contact us</a>
@@ -37,7 +38,7 @@ const Navbar = () => {
                 <a>Dashboard</a>
               </li>
               <li>
-                <a>Our Menu</a>
+                <Link to="/ourMenu">Our Menu</Link>
               </li>
               <li>
                 <a>Our Shop</a>
@@ -49,7 +50,7 @@ const Navbar = () => {
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
             <li>
-              <a>Home</a>
+              <Link to="/">Home</Link>
             </li>
             <li>
               <a> Contact us</a>
@@ -58,7 +59,7 @@ const Navbar = () => {
               <a>Dashboard</a>
             </li>
             <li>
-              <a>Our Menu</a>
+              <Link to="/ourMenu">Our Menu</Link>
             </li>
             <li>
               <a>Our Shop</a>
