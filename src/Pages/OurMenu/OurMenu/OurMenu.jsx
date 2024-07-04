@@ -2,7 +2,9 @@ import React from "react";
 import MenuBanner from "../MenuBanner/MenuBanner";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import TodyOffer from "../TodyOffer/TodyOffer";
-import MenuPizza from "../MenuPizza/MenuPizza";
+import PizzaBanner from "../PizzaBanner/PizzaBanner";
+
+
 
 const OurMenu = () => {
   return (
@@ -12,7 +14,7 @@ const OurMenu = () => {
       </Helmet>
       <MenuBanner></MenuBanner>
       <TodyOffer></TodyOffer>
-      <MenuPizza></MenuPizza>
+     <PizzaBanner></PizzaBanner>
     </div>
   );
 };

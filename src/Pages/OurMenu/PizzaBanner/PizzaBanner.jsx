@@ -1,7 +1,7 @@
 import React from "react";
 import PizzaSection from "../../../assets/menu/pizza-bg.jpg";
 
-const MenuPizza = () => {
+const PizzaBanner = () => {
   return (
     <section
       className="w-full min-h-[800px] flex items-center justify-center "
@@ -26,4 +26,4 @@ const MenuPizza = () => {
   );
 };
 
-export default MenuPizza;
+export default PizzaBanner;
