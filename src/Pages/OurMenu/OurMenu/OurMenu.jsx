@@ -1,10 +1,8 @@
 import React from "react";
 import MenuBanner from "../MenuBanner/MenuBanner";
-import { Helmet, HelmetProvider } from "react-helmet-async";
+import { Helmet } from "react-helmet-async";
 import TodyOffer from "../TodyOffer/TodyOffer";
 import PizzaBanner from "../PizzaBanner/PizzaBanner";
-
-
 
 const OurMenu = () => {
   return (
@@ -14,7 +12,7 @@ const OurMenu = () => {
       </Helmet>
       <MenuBanner></MenuBanner>
       <TodyOffer></TodyOffer>
-     <PizzaBanner></PizzaBanner>
+      <PizzaBanner></PizzaBanner>
     </div>
   );
 };
